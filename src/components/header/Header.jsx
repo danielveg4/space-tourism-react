@@ -1,25 +1,27 @@
-import { Link } from 'react-router-dom';
+import { StyledUlNav, StyledNav, StyledImg, StyledDiv, StyledNavLink } from './styles';
+
 
 const Header = () => {
     return (
-        <div>
-            <nav>
-                <ul>
+        <StyledDiv>
+            <StyledImg src="public\assets\shared\logo.svg" alt="logo" />
+            <StyledNav>
+                <StyledUlNav>
                     <li>
-                        <Link to="/">Home</Link>
+                        <StyledNavLink to="/">00 Home</StyledNavLink>
                     </li>
                     <li>
-                        <Link to="/destination">Destination</Link>
+                        <StyledNavLink to="/destination">01 Destination</StyledNavLink>
                     </li>
                     <li>
-                        <Link to="/crew">Crew</Link>
+                        <StyledNavLink to="/crew">02 Crew</StyledNavLink>
                     </li>
                     <li>
-                        <Link to="/technology">Technology</Link>
+                        <StyledNavLink to="/technology">03 Technology</StyledNavLink>
                     </li>
-                </ul>
-            </nav>
-        </div>
+                </StyledUlNav>
+            </StyledNav>
+        </StyledDiv>
     );
 }
 
