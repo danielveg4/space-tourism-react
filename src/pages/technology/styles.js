@@ -9,6 +9,8 @@ export const StyledDestinationContainer = styled.div`
     background-position: center; 
     background-repeat: no-repeat;
     padding: 12rem;
+    padding-bottom: 0;
+    max-height: 800px;
 `;
 
 export const StyledTitle = styled.div`

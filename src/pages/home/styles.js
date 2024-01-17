@@ -22,6 +22,7 @@ export const StyledHomeDiv = styled.div`
     color: white;
     margin-top: 10rem;
     padding: 10rem;
+    padding-bottom: 0;
 `;
 
 export const StyledSubtitle = styled.h2`
