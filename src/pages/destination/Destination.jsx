@@ -1,13 +1,12 @@
 import { StyledDestinationContainer } from './styles';
 
-
-const Destinarion = () => {
+const Destination = () => {
     return (
         <StyledDestinationContainer>
            
                        
         </StyledDestinationContainer>
     );
-};
+}
 
-export default Destinarion;
+export default Destination;

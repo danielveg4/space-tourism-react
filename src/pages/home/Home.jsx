@@ -1,6 +1,6 @@
 import { StyledCircle, StyledText, StyledTitle, StyledSubtitle, StyledHomeDiv, StyledHomeContainer } from './styles';
 
-const HomeMain = () => {
+const Home = () => {
     return (
         <StyledHomeContainer>
             <StyledHomeDiv>
@@ -15,4 +15,4 @@ const HomeMain = () => {
     );
 }
 
-export default HomeMain;
+export default Home;
