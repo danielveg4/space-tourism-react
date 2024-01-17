@@ -1,8 +1,8 @@
+import Destinarion from "../components/destinationMain/DestinationMain";
+
 const Destination = () => {
     return (
-        <div>
-            <h1>Destination</h1>
-        </div>
+        <Destinarion />
     );
 }
 
