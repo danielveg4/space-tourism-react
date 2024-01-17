@@ -1,4 +1,4 @@
-import { StyledCrewContainer } from './styles';
+import { StyledCrewCharge, StyledDestinationPlanetInfo, StyledDestinationPlanetName, StyledDestinationInfo, StyledDestinationImg, StyledDestinationDiv, StyledTitleBold, StyledTitleLight, StyledCrewTitle, StyledCrewContainer } from './styles';
 import TabsCrew from '../../components/tabsCrew/TabsCrew';
 import { PERSONAL } from '../../constants/personal';
 import { useState } from 'react';
@@ -17,19 +17,19 @@ const Crew = () => {
   
     return (
       <StyledCrewContainer>
-        <div>
-            <h1>02</h1>
-            <h1>Meet your crew</h1>
-        </div>
-        <div>
-            <img src={activePerson.image} alt={activePerson.name} />
-            <div>
-                <p>{activePerson.charge}</p>
-                <p>{activePerson.name}</p>
-                <p>{activePerson.description}</p>
+        <StyledCrewTitle>
+            <StyledTitleLight>02</StyledTitleLight>
+            <StyledTitleBold>Meet your crew</StyledTitleBold>
+        </StyledCrewTitle>
+        <StyledDestinationDiv>
+            <StyledDestinationImg src={activePerson.image} alt={activePerson.name} />
+            <StyledDestinationInfo>
+                <StyledCrewCharge>{activePerson.charge}</StyledCrewCharge>
+                <StyledDestinationPlanetName>{activePerson.name}</StyledDestinationPlanetName>
+                <StyledDestinationPlanetInfo>{activePerson.description}</StyledDestinationPlanetInfo>
                 <TabsCrew tabs={personTabs} />
-            </div>
-        </div>
+            </StyledDestinationInfo>
+        </StyledDestinationDiv>
       </StyledCrewContainer>
     );
   };
